@@ -32,11 +32,17 @@ $connection = mysqli_connect('localhost', 'root', '', 'loginapp');
 
             <?php
         
-            while($row= mysqli_fetch_row($result)){
+            while($row= mysqli_fetch_assoc($result)){
+                ?>
+            <pre>
+                <?php
                 print_r($row);
+                ?>
+            </pre>
+            <?php
             }
-        
 ?>
+
 
         </div>
     </div>
