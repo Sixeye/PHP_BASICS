@@ -1,12 +1,6 @@
 <?php include "db.php";?>
 <?php include "functions.php";?>
-<?php
-if(isset($_POST['submit'])){
-
-    updateTable();
-}
-
-?>
+<?php updateTable();?>
 
 
 <!DOCTYPE html>
@@ -21,7 +15,7 @@ if(isset($_POST['submit'])){
 <body>
 
     <div class="container">
-
+        <h1 class="text-center">UPDATE</h1>
         <div class="col-sm-3">
 
             <form action="login_update.php" method="post">
